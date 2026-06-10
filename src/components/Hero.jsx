@@ -54,11 +54,11 @@ const Hero = () => {
         <source src={heroVideo} type="video/mp4" />
       </video>
 
-      {/* Simple gradient overlay to ensure text readability */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0B0C10] via-[#0B0C10]/40 to-transparent z-10 pointer-events-none"></div>
+      {/* Gradient overlay to ensure text readability */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0B0C10] via-[#0B0C10]/70 to-[#0B0C10]/40 md:via-[#0B0C10]/40 md:to-transparent z-10 pointer-events-none"></div>
 
       {/* Content */}
-      <div className="absolute inset-0 z-20 px-6 pb-20 md:pb-[8%] md:px-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-end md:justify-between items-start md:items-end text-left w-full">
+      <div className="absolute inset-0 z-20 px-6 pt-32 pb-20 md:pt-0 md:pb-[8%] md:px-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-end md:justify-between items-start md:items-end text-left w-full">
         
         {/* Left: Text with 3D parallax */}
         <div 
@@ -113,12 +113,12 @@ const Hero = () => {
           <div 
             data-aos="fade-up"
             data-aos-delay="400"
-            className="flex flex-row flex-wrap items-center gap-4 w-full"
+            className="flex flex-col md:flex-row items-stretch md:items-center gap-4 w-full md:w-auto"
             style={{ transform: 'translateZ(15px)' }}
           >
             <button 
               onClick={() => scrollTo('projects')}
-              className="group relative px-7 py-3 md:px-9 md:py-3.5 text-sm md:text-base rounded-full bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] text-white font-bold transition-all duration-300 transform hover:scale-105 cursor-pointer overflow-hidden shadow-[0_0_30px_rgba(255,65,108,0.4)] hover:shadow-[0_0_50px_rgba(255,65,108,0.7)]"
+              className="group relative px-7 py-3.5 md:px-9 md:py-3.5 text-sm md:text-base rounded-full bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] text-white font-bold transition-all duration-300 transform hover:scale-105 cursor-pointer overflow-hidden shadow-[0_0_30px_rgba(255,65,108,0.4)] hover:shadow-[0_0_50px_rgba(255,65,108,0.7)] w-full md:w-auto flex justify-center"
             >
               <span className="relative z-10 flex items-center gap-2">
                 View My Work
@@ -128,24 +128,26 @@ const Hero = () => {
               <div className="absolute top-0 -left-[100%] w-1/2 h-full bg-gradient-to-r from-transparent via-white/25 to-transparent skew-x-[25deg] group-hover:left-[200%] transition-all duration-700"></div>
             </button>
             
-            <button 
-              onClick={() => scrollTo('contact')}
-              className="group px-7 py-3 md:px-9 md:py-3.5 text-sm md:text-base rounded-full bg-white/5 backdrop-blur-xl border border-white/20 text-white font-semibold hover:bg-white/15 hover:border-white/40 hover:shadow-[0_0_30px_rgba(255,255,255,0.15)] transition-all duration-300 cursor-pointer"
-            >
-              <span className="flex items-center gap-2">
-                Contact Me
-                <svg className="w-4 h-4 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-              </span>
-            </button>
-            
-            <a 
-              href="/resume.pdf" 
-              download
-              className="group px-7 py-3 md:px-9 md:py-3.5 text-sm md:text-base rounded-full bg-transparent border border-[#ff416c] text-[#ff416c] font-semibold hover:bg-[#ff416c] hover:text-white hover:shadow-[0_0_30px_rgba(255,65,108,0.3)] transition-all duration-300 cursor-pointer flex items-center gap-2"
-            >
-              Resume
-              <svg className="w-4 h-4 transform group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
-            </a>
+            <div className="flex flex-row gap-4 w-full md:w-auto">
+              <button 
+                onClick={() => scrollTo('contact')}
+                className="group px-7 py-3 md:px-9 md:py-3.5 text-sm md:text-base rounded-full bg-white/5 backdrop-blur-xl border border-white/20 text-white font-semibold hover:bg-white/15 hover:border-white/40 hover:shadow-[0_0_30px_rgba(255,255,255,0.15)] transition-all duration-300 cursor-pointer flex-1 md:flex-none flex justify-center"
+              >
+                <span className="flex items-center gap-2">
+                  Contact Me
+                  <svg className="w-4 h-4 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all hidden md:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                </span>
+              </button>
+              
+              <a 
+                href="/resume.pdf" 
+                download
+                className="group px-7 py-3 md:px-9 md:py-3.5 text-sm md:text-base rounded-full bg-transparent border border-[#ff416c] text-[#ff416c] font-semibold hover:bg-[#ff416c] hover:text-white hover:shadow-[0_0_30px_rgba(255,65,108,0.3)] transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 flex-1 md:flex-none"
+              >
+                Resume
+                <svg className="w-4 h-4 transform group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+              </a>
+            </div>
           </div>
 
           <div 

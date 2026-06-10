@@ -22,12 +22,22 @@ const Hero = () => {
   const toggleVideo = (e) => {
     e.stopPropagation();
     if (videoRef.current) {
-      if (videoRef.current.paused) {
+      if (isMuted) {
+        // Unmute and restart the reel with sound
+        setIsMuted(false);
+        videoRef.current.muted = false;
+        videoRef.current.currentTime = 0;
         videoRef.current.play();
         setIsPlaying(true);
       } else {
-        videoRef.current.pause();
-        setIsPlaying(false);
+        // Toggle play/pause normally if already unmuted
+        if (videoRef.current.paused) {
+          videoRef.current.play();
+          setIsPlaying(true);
+        } else {
+          videoRef.current.pause();
+          setIsPlaying(false);
+        }
       }
     }
   };

@@ -5,8 +5,8 @@ import heroVideo from '../assets/hero video/WhatsApp Video 2026-06-08 at 12.15.3
 
 const Hero = () => {
   const videoRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [isMuted, setIsMuted] = useState(true);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -46,6 +46,7 @@ const Hero = () => {
       {/* Background Video */}
       <video
         ref={videoRef}
+        autoPlay
         loop
         muted={isMuted}
         playsInline

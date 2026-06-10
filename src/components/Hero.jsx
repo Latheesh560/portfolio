@@ -151,8 +151,8 @@ const Hero = () => {
               </button>
               
               <a 
-                href="/resume.pdf" 
-                download
+                href="/VALMETI_LATHEESH_RESUME.pdf" 
+                download="VALMETI_LATHEESH_RESUME.pdf"
                 className="group px-7 py-3 md:px-9 md:py-3.5 text-sm md:text-base rounded-full bg-transparent border border-[#ff416c] text-[#ff416c] font-semibold hover:bg-[#ff416c] hover:text-white hover:shadow-[0_0_30px_rgba(255,65,108,0.3)] transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 flex-1 md:flex-none"
               >
                 Resume

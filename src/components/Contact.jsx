@@ -49,7 +49,7 @@ const Contact = () => {
   return (
     <section ref={ref} id="contact" className="bg-[#0B0C10] w-full min-h-screen relative overflow-hidden flex items-end pt-32 pb-0 md:pb-0 border-t border-white/5">
       {/* Ambient background glow */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-gradient-to-t from-[#ff416c]/10 to-transparent blur-[150px] pointer-events-none z-0"></div>
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-gradient-to-t from-[#00ffcc]/10 to-transparent blur-[150px] pointer-events-none z-0"></div>
 
       {/* Huge Background Text */}
       <motion.div 
@@ -71,15 +71,15 @@ const Contact = () => {
           className="bg-[#15161c]/80 backdrop-blur-3xl border border-white/10 border-b-0 border-r-0 w-full md:w-[85%] lg:w-[75%] p-8 md:p-16 text-white flex flex-col justify-between rounded-tl-[3rem] shadow-[-10px_-10px_30px_rgba(0,0,0,0.4)]"
         >
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-20 border-b border-white/10 pb-8">
-            <div className="text-xs font-bold tracking-[0.2em] uppercase text-[#ff416c] mb-6 md:mb-0">
+            <div className="text-xs font-bold tracking-[0.2em] uppercase text-[#00ffcc] mb-6 md:mb-0">
               Reach Us
             </div>
             <div className="text-sm font-medium text-gray-300 md:text-right">
               <p className="mb-1"><a href="mailto:latheeshvalmeti226@gmail.com" className="hover:text-white hover:underline transition-colors">latheeshvalmeti226@gmail.com</a></p>
               <p className="mb-4 text-white">+91-9110788265</p>
               <div className="flex gap-6 md:justify-end">
-                <a href="https://linkedin.com/in/valmeti-latheesh" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#ff416c] transition-colors uppercase text-xs font-bold tracking-wider">LinkedIn</a>
-                <a href="https://github.com/Latheesh560" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#ff416c] transition-colors uppercase text-xs font-bold tracking-wider">GitHub</a>
+                <a href="https://linkedin.com/in/valmeti-latheesh" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#00ffcc] transition-colors uppercase text-xs font-bold tracking-wider">LinkedIn</a>
+                <a href="https://github.com/Latheesh560" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#00ffcc] transition-colors uppercase text-xs font-bold tracking-wider">GitHub</a>
               </div>
             </div>
           </div>
@@ -95,9 +95,9 @@ const Contact = () => {
                     name="user_firstname"
                     required
                     placeholder=" " 
-                    className="peer w-full bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-[#ff416c] transition-colors font-medium rounded-none text-white"
+                    className="peer w-full bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-[#00ffcc] transition-colors font-medium rounded-none text-white"
                   />
-                  <label htmlFor="firstName" className="absolute left-0 top-4 text-gray-500 text-lg font-medium transition-all peer-focus:-top-2 peer-focus:text-xs peer-focus:text-[#ff416c] peer-[&:not(:placeholder-shown)]:-top-2 peer-[&:not(:placeholder-shown)]:text-xs peer-[&:not(:placeholder-shown)]:text-gray-400 pointer-events-none">First Name</label>
+                  <label htmlFor="firstName" className="absolute left-0 top-4 text-gray-500 text-lg font-medium transition-all peer-focus:-top-2 peer-focus:text-xs peer-focus:text-[#00ffcc] peer-[&:not(:placeholder-shown)]:-top-2 peer-[&:not(:placeholder-shown)]:text-xs peer-[&:not(:placeholder-shown)]:text-gray-400 pointer-events-none">First Name</label>
                 </div>
                 <div className="relative group pt-4">
                   <input 
@@ -106,9 +106,9 @@ const Contact = () => {
                     name="user_lastname"
                     required
                     placeholder=" " 
-                    className="peer w-full bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-[#ff416c] transition-colors font-medium rounded-none text-white"
+                    className="peer w-full bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-[#00ffcc] transition-colors font-medium rounded-none text-white"
                   />
-                  <label htmlFor="lastName" className="absolute left-0 top-4 text-gray-500 text-lg font-medium transition-all peer-focus:-top-2 peer-focus:text-xs peer-focus:text-[#ff416c] peer-[&:not(:placeholder-shown)]:-top-2 peer-[&:not(:placeholder-shown)]:text-xs peer-[&:not(:placeholder-shown)]:text-gray-400 pointer-events-none">Last Name</label>
+                  <label htmlFor="lastName" className="absolute left-0 top-4 text-gray-500 text-lg font-medium transition-all peer-focus:-top-2 peer-focus:text-xs peer-focus:text-[#00ffcc] peer-[&:not(:placeholder-shown)]:-top-2 peer-[&:not(:placeholder-shown)]:text-xs peer-[&:not(:placeholder-shown)]:text-gray-400 pointer-events-none">Last Name</label>
                 </div>
                 <div className="relative group pt-4">
                   <input 
@@ -117,9 +117,9 @@ const Contact = () => {
                     name="user_email"
                     required
                     placeholder=" " 
-                    className="peer w-full bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-[#ff416c] transition-colors font-medium rounded-none text-white"
+                    className="peer w-full bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-[#00ffcc] transition-colors font-medium rounded-none text-white"
                   />
-                  <label htmlFor="email" className="absolute left-0 top-4 text-gray-500 text-lg font-medium transition-all peer-focus:-top-2 peer-focus:text-xs peer-focus:text-[#ff416c] peer-[&:not(:placeholder-shown)]:-top-2 peer-[&:not(:placeholder-shown)]:text-xs peer-[&:not(:placeholder-shown)]:text-gray-400 pointer-events-none">Email</label>
+                  <label htmlFor="email" className="absolute left-0 top-4 text-gray-500 text-lg font-medium transition-all peer-focus:-top-2 peer-focus:text-xs peer-focus:text-[#00ffcc] peer-[&:not(:placeholder-shown)]:-top-2 peer-[&:not(:placeholder-shown)]:text-xs peer-[&:not(:placeholder-shown)]:text-gray-400 pointer-events-none">Email</label>
                 </div>
               </div>
 
@@ -131,9 +131,9 @@ const Contact = () => {
                     name="message"
                     required
                     placeholder=" " 
-                    className="peer w-full h-full min-h-[120px] bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-[#ff416c] transition-colors font-medium resize-none rounded-none text-white"
+                    className="peer w-full h-full min-h-[120px] bg-transparent border-b border-white/20 pb-3 text-lg focus:outline-none focus:border-[#00ffcc] transition-colors font-medium resize-none rounded-none text-white"
                   ></textarea>
-                  <label htmlFor="message" className="absolute left-0 top-4 text-gray-500 text-lg font-medium transition-all peer-focus:-top-2 peer-focus:text-xs peer-focus:text-[#ff416c] peer-[&:not(:placeholder-shown)]:-top-2 peer-[&:not(:placeholder-shown)]:text-xs peer-[&:not(:placeholder-shown)]:text-gray-400 pointer-events-none">Type your message here...</label>
+                  <label htmlFor="message" className="absolute left-0 top-4 text-gray-500 text-lg font-medium transition-all peer-focus:-top-2 peer-focus:text-xs peer-focus:text-[#00ffcc] peer-[&:not(:placeholder-shown)]:-top-2 peer-[&:not(:placeholder-shown)]:text-xs peer-[&:not(:placeholder-shown)]:text-gray-400 pointer-events-none">Type your message here...</label>
                 </div>
               </div>
             </div>
@@ -145,8 +145,8 @@ const Contact = () => {
                 <input 
                   type="checkbox" 
                   id="permission" 
-                  className="mt-1 w-4 h-4 rounded-sm border-white/20 bg-transparent text-[#ff416c] focus:ring-[#ff416c] focus:ring-offset-0 focus:ring-offset-transparent cursor-pointer" 
-                  style={{ accentColor: "#ff416c" }}
+                  className="mt-1 w-4 h-4 rounded-sm border-white/20 bg-transparent text-[#00ffcc] focus:ring-[#00ffcc] focus:ring-offset-0 focus:ring-offset-transparent cursor-pointer" 
+                  style={{ accentColor: "#00ffcc" }}
                 />
                 <label htmlFor="permission" className="cursor-pointer max-w-[280px] leading-snug">
                   I give permission to contact me at this email address.
@@ -167,7 +167,7 @@ const Contact = () => {
                     <button 
                       type="submit" 
                       disabled={isSubmitting}
-                      className="px-8 py-3 rounded-full bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] text-white font-bold flex items-center justify-center gap-3 hover:shadow-[0_0_20px_rgba(255,65,108,0.5)] transition-all duration-300 group whitespace-nowrap self-start sm:self-auto hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="px-8 py-3 rounded-full bg-gradient-to-r from-[#00ffcc] to-[#00b8ff] text-white font-bold flex items-center justify-center gap-3 hover:shadow-[0_0_20px_rgba(0,255,204,0.5)] transition-all duration-300 group whitespace-nowrap self-start sm:self-auto hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       {isSubmitting ? 'Sending...' : 'Send Message'}
                       {!isSubmitting && (

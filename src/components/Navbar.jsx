@@ -58,8 +58,8 @@ const Navbar = () => {
         
         {/* Left Side: Logo/Name */}
         <div className="flex items-center">
-          <a href="#home" className="text-white text-2xl font-black tracking-tight">
-            Latheesh<span className="text-[#ff416c]">.</span>
+          <a href="#home" className="text-white text-2xl font-black tracking-tight font-mono">
+            Latheesh<span className="text-[#00ffcc] animate-pulse">_</span>
           </a>
         </div>
 
@@ -74,13 +74,13 @@ const Navbar = () => {
                 href={`#${id}`}
                 className={`font-medium relative group transition-colors duration-300 ${
                   isActive 
-                    ? 'text-[#ff416c]' 
+                    ? 'text-[#00ffcc]' 
                     : 'text-white/80 hover:text-white'
                 }`}
               >
                 {link}
                 {/* Active / hover underline */}
-                <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] transition-all duration-300 shadow-[0_0_10px_rgba(255,65,108,0.5)] ${
+                <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-[#00ffcc] to-[#00b8ff] transition-all duration-300 shadow-[0_0_10px_rgba(0,255,204,0.5)] ${
                   isActive ? 'w-full' : 'w-0 group-hover:w-full'
                 }`}></span>
               </a>
@@ -131,7 +131,7 @@ const Navbar = () => {
                 href={`#${id}`}
                 onClick={() => setIsOpen(false)}
                 className={`font-bold text-lg border-b border-white/10 pb-2 transition-colors ${
-                  isActive ? 'text-[#ff416c]' : 'text-white hover:text-[#ff416c]'
+                  isActive ? 'text-[#00ffcc]' : 'text-white hover:text-[#00ffcc]'
                 }`}
               >
                 {link}
@@ -142,7 +142,7 @@ const Navbar = () => {
              <a 
                href="#contact" 
                onClick={() => setIsOpen(false)} 
-               className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] text-white font-black hover:shadow-[0_0_20px_rgba(255,65,108,0.5)] transition-all duration-300 w-full text-center"
+               className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-[#00ffcc] to-[#00b8ff] text-black font-black hover:shadow-[0_0_20px_rgba(0,255,204,0.5)] transition-all duration-300 w-full text-center"
              >
                Hire Me
              </a>

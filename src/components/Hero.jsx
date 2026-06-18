@@ -82,11 +82,11 @@ const Hero = () => {
           {/* Eyebrow tag */}
           <div
             data-aos="fade-up"
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#ff416c]/30 bg-[#ff416c]/10 backdrop-blur-md mb-6"
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#00ffcc]/30 bg-[#00ffcc]/10 backdrop-blur-md mb-6 font-mono"
             style={{ transform: 'translateZ(40px)' }}
           >
-            <span className="w-2 h-2 rounded-full bg-[#ff416c] animate-pulse shadow-[0_0_10px_#ff416c]"></span>
-            <span className="text-xs font-bold text-[#ff416c] tracking-widest uppercase">Available for Work</span>
+            <span className="w-2 h-2 rounded-full bg-[#00ffcc] animate-pulse shadow-[0_0_10px_#00ffcc]"></span>
+            <span className="text-xs font-bold text-[#00ffcc] tracking-widest uppercase">Available for Work</span>
           </div>
 
           {/* Main Heading with shimmer */}
@@ -98,9 +98,11 @@ const Hero = () => {
           >
             Hi, I'm Valmeti<br />Latheesh,
             <br />a{' '}
-            <span className="hero-gradient-text">
+            <span className="hero-gradient-text relative inline-block">
               Full Stack
               <br className="md:hidden" /> Developer
+              {/* Animated cursor for typewriter feel */}
+              <span className="absolute -right-4 bottom-0 md:-right-6 md:bottom-2 w-3 md:w-4 h-10 md:h-16 bg-[#00ffcc] animate-pulse hidden md:inline-block"></span>
             </span>
           </h1>
 
@@ -128,14 +130,14 @@ const Hero = () => {
           >
             <button 
               onClick={() => scrollTo('projects')}
-              className="group relative px-7 py-3.5 md:px-9 md:py-3.5 text-sm md:text-base rounded-full bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] text-white font-bold transition-all duration-300 transform hover:scale-105 cursor-pointer overflow-hidden shadow-[0_0_30px_rgba(255,65,108,0.4)] hover:shadow-[0_0_50px_rgba(255,65,108,0.7)] w-full md:w-auto flex justify-center"
+              className="group relative px-7 py-3.5 md:px-9 md:py-3.5 text-sm md:text-base rounded-full bg-gradient-to-r from-[#00ffcc] to-[#00b8ff] text-black font-bold transition-all duration-300 transform hover:scale-105 cursor-pointer overflow-hidden shadow-[0_0_30px_rgba(0,255,204,0.4)] hover:shadow-[0_0_50px_rgba(0,255,204,0.7)] w-full md:w-auto flex justify-center"
             >
               <span className="relative z-10 flex items-center gap-2">
                 View My Work
                 <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
               </span>
               {/* Button shine sweep */}
-              <div className="absolute top-0 -left-[100%] w-1/2 h-full bg-gradient-to-r from-transparent via-white/25 to-transparent skew-x-[25deg] group-hover:left-[200%] transition-all duration-700"></div>
+              <div className="absolute top-0 -left-[100%] w-1/2 h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[25deg] group-hover:left-[200%] transition-all duration-700"></div>
             </button>
             
             <div className="flex flex-row gap-4 w-full md:w-auto">
@@ -152,7 +154,7 @@ const Hero = () => {
               <a 
                 href="/VALMETI_LATHEESH_RESUME.pdf" 
                 download="VALMETI_LATHEESH_RESUME.pdf"
-                className="group px-7 py-3 md:px-9 md:py-3.5 text-sm md:text-base rounded-full bg-transparent border border-[#ff416c] text-[#ff416c] font-semibold hover:bg-[#ff416c] hover:text-white hover:shadow-[0_0_30px_rgba(255,65,108,0.3)] transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 flex-1 md:flex-none"
+                className="group px-7 py-3 md:px-9 md:py-3.5 text-sm md:text-base rounded-full bg-transparent border border-[#00ffcc] text-[#00ffcc] font-semibold hover:bg-[#00ffcc] hover:text-black hover:shadow-[0_0_30px_rgba(0,255,204,0.3)] transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 flex-1 md:flex-none"
               >
                 Resume
                 <svg className="w-4 h-4 transform group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
@@ -163,16 +165,16 @@ const Hero = () => {
           <div 
             data-aos="fade-up"
             data-aos-delay="550"
-            className="flex items-center gap-8 mt-10"
+            className="flex items-center gap-8 mt-10 font-mono"
             style={{ transform: 'translateZ(10px)' }}
           >
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-black text-white">2+</div>
+              <div className="text-2xl md:text-3xl font-black text-[#00ffcc]">2+</div>
               <div className="text-[10px] md:text-xs text-gray-400 font-medium uppercase tracking-wider">Projects</div>
             </div>
             <div className="w-px h-10 bg-white/20"></div>
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-black text-white">5+</div>
+              <div className="text-2xl md:text-3xl font-black text-[#00ffcc]">5+</div>
               <div className="text-[10px] md:text-xs text-gray-400 font-medium uppercase tracking-wider">Technologies</div>
             </div>
           </div>
@@ -185,8 +187,8 @@ const Hero = () => {
           className="mt-8 md:mt-0 flex flex-row md:flex-col items-center gap-2 md:gap-3 cursor-pointer group self-start md:self-auto relative"
           onClick={toggleVideo}
         >
-          <div className="relative w-14 h-14 md:w-20 md:h-20 rounded-full border-2 border-white/20 bg-black/30 backdrop-blur-xl flex justify-center items-center group-hover:scale-110 group-hover:bg-[#ff416c] group-hover:border-[#ff416c] transition-all duration-500 shadow-[0_0_40px_rgba(0,0,0,0.3)] group-hover:shadow-[0_0_50px_rgba(255,65,108,0.6)] z-10">
-            <div className="absolute inset-0 rounded-full border-2 border-[#ff416c]/50 animate-[ping_2s_ease-in-out_infinite] opacity-30"></div>
+          <div className="relative w-14 h-14 md:w-20 md:h-20 rounded-full border-2 border-white/20 bg-black/30 backdrop-blur-xl flex justify-center items-center group-hover:scale-110 group-hover:bg-[#00ffcc] group-hover:border-[#00ffcc] group-hover:text-black transition-all duration-500 shadow-[0_0_40px_rgba(0,0,0,0.3)] group-hover:shadow-[0_0_50px_rgba(0,255,204,0.6)] z-10 text-white">
+            <div className="absolute inset-0 rounded-full border-2 border-[#00ffcc]/50 animate-[ping_2s_ease-in-out_infinite] opacity-30"></div>
             {!isPlaying || isMuted ? (
               <svg className="w-5 h-5 md:w-7 md:h-7 text-white ml-0.5 md:ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
             ) : (

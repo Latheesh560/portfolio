@@ -1,5 +1,5 @@
 import React, { useRef, useState, useCallback } from 'react';
-import stackImage from '../assets/about/image.png';
+import stackImage from '../assets/about/ProfilePic.jpeg';
 import reactImage from '../assets/about/react.png';
 import nodeImage from '../assets/about/node.png';
 import pythonImage from '../assets/about/Python.png';

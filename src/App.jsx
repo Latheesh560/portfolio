@@ -8,10 +8,13 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import BackToTop from './components/BackToTop'
+import Terminal from './components/Terminal'
+import CustomCursor from './components/CustomCursor'
 
 function App() {
   return (
     <>
+      <CustomCursor />
       <Preloader />
       <Navbar />
       <Hero />
@@ -21,6 +24,7 @@ function App() {
       <Contact />
       <Footer />
       <BackToTop />
+      <Terminal />
     </>
   )
 }

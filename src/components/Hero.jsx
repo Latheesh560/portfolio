@@ -64,8 +64,9 @@ const Hero = () => {
         <source src={heroVideo} type="video/mp4" />
       </video>
 
-      {/* Gradient overlay to ensure text readability */}
+      {/* Gradient overlays to ensure text readability */}
       <div className="absolute inset-0 bg-gradient-to-t from-[#0B0C10] via-[#0B0C10]/70 to-[#0B0C10]/40 md:via-[#0B0C10]/40 md:to-transparent z-10 pointer-events-none"></div>
+      <div className="absolute top-0 left-0 w-full h-[35%] bg-gradient-to-b from-[#0B0C10]/90 to-transparent z-10 pointer-events-none"></div>
 
       {/* Content */}
       <div className="absolute inset-0 z-20 px-6 pt-32 pb-20 md:pt-0 md:pb-[8%] md:px-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-end md:justify-between items-start md:items-end text-left w-full">

@@ -1,6 +1,7 @@
 import React, { useRef, useCallback, useState } from 'react';
 import sheshieldImage from '../assets/projects/sheshield.png';
 import studentImage from '../assets/projects/student.png';
+import luckmartImage from '../assets/projects/luckmart.jpeg';
 
 const ProjectCard = ({ title, stack, features, githubLink, liveLink, image, aosDelay, index }) => {
   const cardRef = useRef(null);
@@ -124,7 +125,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           <ProjectCard 
             aosDelay="100"
             index={0}
@@ -153,6 +154,20 @@ const Projects = () => {
               "CRUD operations, student search/filter functionality, and marks management using PostgreSQL.",
               "Responsive UI with Bootstrap and normalized relational database schema with constraints.",
               "Dashboard with student statistics, academic summaries, and performance metrics."
+            ]}
+          />
+          <ProjectCard 
+            aosDelay="400"
+            index={2}
+            title="Luck Mart — E-Commerce Platform"
+            image={luckmartImage}
+            stack={['React.js', 'Redux Toolkit', 'Node.js', 'Express.js', 'MongoDB', 'Stripe', 'JWT']}
+            githubLink="https://github.com/Latheesh560/Luckymart"
+            features={[
+              "Full-featured e-commerce store with secure authentication, dynamic product catalog, and responsive shopping cart.",
+              "Stripe API integration for secure, seamless credit card transactions and payment processing flows.",
+              "Robust state management powered by Redux Toolkit for efficient cart updates and user session persistence.",
+              "Secure authentication and authorization using JSON Web Tokens (JWT) and encrypted passwords."
             ]}
           />
         </div>
